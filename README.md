@@ -1,5 +1,7 @@
 # Репозиторий ДЗ
 
+Макет ДЗ https://www.figma.com/design/0bv5zrUahPze4wjdS0zfpg/23---Nuxt---PRO?node-id=2-53
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.

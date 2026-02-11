@@ -4,24 +4,33 @@ import type { NuxtError } from "#app";
 defineProps<{
   error: NuxtError;
 }>();
+
+const goHome = () => {
+  navigateTo("/");
+};
 </script>
 
 <template>
   <div class="error__wrapper">
     <h1 class="error__status">{{ error.status }}</h1>
     <div
-      class="error__message"
       v-if="error.status === 404"
+      class="error__message"
     >
       Страница не найдена, вернитесь на главную страницу
     </div>
     <div
-      class="error__message"
       v-else
+      class="error__message"
     >
       {{ error.message }}
     </div>
-    <ActionButton class="error__button"> На главную </ActionButton>
+    <ActionButton
+      class="error__button"
+      @click="goHome"
+    >
+      На главную
+    </ActionButton>
   </div>
 </template>
 

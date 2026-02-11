@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import "~/assets/styles/main.css";
+
 </script>
 
 <template>
   <div>
-    <NuxtPage />
+    <h1>Post</h1>
   </div>
 </template>
+
+<style lang="scss" scoped>
+
+</style>
